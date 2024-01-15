@@ -1,4 +1,61 @@
 @charset "UTF_8";
-body{
-    background-image: linear-gradient(to bottom, rgba(152, 0, 169, 0.571), rgba(2, 232, 253, 0.829));
+*{
+    margin: 0px;
+    padding: 0px;
+}
+html, body{
+    min-height:100%;
+    background-color: darkgrey;
+}
+header{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+header > h1{
+    padding: 50px;
+    font-variant: small-caps;
+}
+header >p{
+    padding-bottom: 50px;
+}
+a{
+    color: white;
+    text-decoration: none;
+    font-weight:bolder;
+}
+a:hover{
+    color: blueviolet;
+    font-size: 1.5em;
+    transition-duration: 0.5s;
+    text-decoration: underline;
+    font-weight: bolder;
+}
+section{
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+}
+.nomal{
+    background-color: white;
+    color: black;
+}
+.imagem{
+    background-color: black;
+    color: white;
+}
+.imagem >p{
+    background-color: rgba(0, 0, 0, 0.205);
+    width: 400px;
+    border-radius: 10px;
+    box-shadow: inline 5px 5px 5px rgba(0, 0, 0, 0.218);
+}
+footer{
+    background-image:linear-gradient(to left, black, rgb(48,48,48));
+    color: white;
+}
+footer >p{
+    text-align: center;
+    padding: 50px;
 }
