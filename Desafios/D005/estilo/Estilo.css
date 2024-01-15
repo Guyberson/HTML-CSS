@@ -1,4 +1,11 @@
 @charset "UTF_8";
+
+@import url('https://fonts.googleapis.com/css2? family= Kalnia:wght@200 & family= Lobster & family= Noto+Sans+JP:wght@100 & family= Rubik+Doodle+ Sombra & família= Sussurro & display=troca');
+:root{
+    --fonte01:Arial, Helvetica, sans-serif;
+    --fonte02:font-family: 'Kalnia', serif, cursive;
+}
+
 *{
     margin: 0px;
     padding: 0px;
@@ -8,9 +15,11 @@ html, body{
     background-color: darkgrey;
 }
 header{
-    background-color: black;
+    background-image: linear-gradient(to right, black, black , white);
     color: white;
     text-align: center;
+    font-size: 2vw;
+    font-family: cursive;
 }
 header > h1{
     padding: 50px;
@@ -36,20 +45,37 @@ section{
     padding-bottom: 10vh;
     line-height: 2em;
     padding-left: 30px;
+    font-family: cursive;
+    font-size: 1.2em;
 }
-.nomal{
+.normal{
     background-color: white;
     color: black;
 }
 .imagem{
     background-color: black;
+    box-shadow: inset 10px 10px 10px black;
     color: white;
 }
 .imagem >p{
-    background-color: rgba(0, 0, 0, 0.205);
-    width: 400px;
+    background-color: rgba(96, 96, 96, 0.266);
+    display:inline-block;
+    padding: 5px;
     border-radius: 10px;
     box-shadow: inline 5px 5px 5px rgba(0, 0, 0, 0.218);
+    text-shadow: 2px 2px 0px black;
+}
+#img01{
+    background-image: url('../imagens/wallpaper\ 05.jpg');
+    background-position: right center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+#img02{
+    background-image: url('../imagens/wallpaper\ 04.jpg');
+    background-position: right center;
+    background-attachment:fixed;
+    background-size: cover;
 }
 footer{
     background-image:linear-gradient(to left, black, rgb(48,48,48));
