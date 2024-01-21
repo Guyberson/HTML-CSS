@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+    <title>Tabela Real.</title>
+    <style>
+        body{
+            background-image: url('wallpaper\ 04.jpg');
+            background-position: 100%;
+            background-size: cover;
+            background-repeat: no-repeat;
+            color: white;
+        }
+        table{
+            border-collapse: collapse;
+            width: 700px;
+            margin: auto;
+            box-shadow: 5px 5px 20px black;
+        }
+        tr,td{
+            border: 2px solid black;
+            padding: 10px;
+            text-align: start;
+        }
+        .centro{
+            text-align: center;
+            background-color: rgba(255, 255, 255, 0.299);
+            color: black;
+        }
+        div{
+            text-align: center;
+            height: 110vh;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Exercicio de Tabela.</h1>
+        <table>
+            <tr>
+                <td class="centro">Grupo</td>
+                <td class="centro">Nome</td>
+                <td colspan="3" class="centro">Filme</td>
+            </tr>
+            <tr>
+                <td rowspan="3" class="centro">Mulheres</td>
+                <td>Ana Maria Santos</td>
+                <td>Alien</td>
+                <td>Rambo</td>
+                <td>Vingadores</td>
+            </tr>
+            <tr>
+                <td>Beatriz Sousa</td>
+                <td>Hulk</td>
+                <td>Inseption</td>
+                <td>Batmam</td>
+            </tr>
+            <tr>
+                <td>Claudia Lops</td>
+                <td>Oblivion</td>
+                <td>Matrix</td>
+                <td>Big Hero</td>
+            </tr>
+            <tr>
+                <td rowspan="3" class="centro">Homens</td>
+                <td>Bruno Mendonça</td>
+                <td>Intocavel</td>
+                <td>Amnésia</td>
+                <td>Cladiador</td>
+            </tr>
+            <tr>
+                <td>Daniel Louderenço</td>
+                <td>Wall-E</td>
+                <td>Oldboy</td>
+                <td>Dangal</td>
+            </tr>
+            <tr>
+                <td>Fabiano Mota</td>
+                <td>Stars Wars5</td>
+                <td>Taxi Drive</td>
+                <td>Toy Store</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
