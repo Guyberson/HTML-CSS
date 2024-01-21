@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+    <title>Mesclagem de tabelas</title>
+    <style>
+        body{
+            background-image: linear-gradient(to right bottom, rgb(108, 252, 12),rgb(32, 32, 199), rgb(186, 28, 221));
+            color: black;
+        }
+        h1{
+            text-shadow: 3px 6px 6px rgba(0, 0, 0, 0.514);
+            color: white;
+        }
+        table{
+            border-collapse: collapse;
+            width: 500px;
+            text-align: center;
+            margin: auto;
+            box-shadow: 5px 5px 20px black;
+        }
+        tr,td{
+            border: 3px solid rgb(46, 45, 45);
+            padding: 10px;
+        }
+        div{
+            text-align: center;
+            height: 110vh;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Desafio de Mesclagem de tabelas.</h1>
+        <table>
+            <tr>
+                <td colspan="4">A</td>
+                <td rowspan="4">B</td>
+            </tr>
+            <tr>
+                <td rowspan="4">C</td>
+                <td>D</td>
+                <td>E</td>
+                <td>F</td>
+            </tr>
+            <tr>
+                <td>G</td>
+                <td>H</td>
+                <td>I</td>
+            </tr>
+            <tr>
+                <td>J</td>
+                <td>K</td>
+                <td>L</td>
+            </tr>
+            <tr>
+                <td colspan="4">M</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
