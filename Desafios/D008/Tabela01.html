@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+    <title>Tablas Responsivas</title>
+    <style>
+        body{
+            background-color: rgb(48,48,48);
+            color:white;
+        }
+        div{
+            text-align: center;
+        }
+        table{
+            border-collapse: collapse;
+            width: 1000px;
+            margin: auto;
+            box-shadow: 10px 10px 30px black;
+        }
+        tr,th,td{
+            border: 2px solid white;
+            padding: 10px;
+            text-align: center;
+        }
+        .especial{
+            background-color: rgba(255, 255, 255, 0.768);
+            color: black;
+            font-size: 1.5em;
+            font-style: italic;
+            font-weight: bolder;
+        }
+        #fundo{
+            font-size: 1em;
+        }
+        #fundo2{
+            background-color: rgba(255, 255, 255, 0.768);
+            color: black;
+            font-style: italic;
+            font-weight: bolder;
+        }
+        .txt{
+            text-align: start;
+        }
+        footer{
+            text-align: center;
+            margin: auto;
+            margin-top: 20%;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Desafio de tabelas.</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th rowspan="2" class="especial">Àrea</th>
+                    <th rowspan="2" class="especial">Disciplina</th>
+                    <th colspan="2" class="especial">
+                        Notas
+                        <th rowspan="2" class="especial">Média</th>
+                        <tr>
+                            <th class="especial" id="fundo">Nota 1</th>
+                            <th class="especial" id="fundo">Nota 2</th>
+                        </tr>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td rowspan="4" class="especial">Exatas</td>
+                    <td class="txt">Matemática</td>
+                    <td>5.5</td>
+                    <td>9.6</td>
+                    <td>1.8</td>
+                </tr>
+                <tr>
+                    <td class="txt">Fisíca</td>
+                    <td>8.2</td>
+                    <td>6.0</td>
+                    <td>7.5</td>
+                </tr>
+                <tr>
+                    <td class="txt">Quimíca</td>
+                    <td>4.5</td>
+                    <td>5.9</td>
+                    <td>9.1</td>
+                </tr>
+                <tr>
+                    <td class="txt">Bioligia</td>
+                    <td>0.0</td>
+                    <td>6.0</td>
+                    <td>6.0</td>
+                </tr>
+                <tr>
+                    <td colspan="4" class="txt" id="fundo2">Média de Exatas</td>
+                    <td id="fundo2">9.9</td>
+                </tr>
+                <tr>
+                    <td rowspan="2" class="especial">Humanas</td>
+                    <td class="txt">Historia</td>
+                    <td>4.5</td>
+                    <td>9.8</td>
+                    <td>8.2</td>
+                </tr>
+                <tr>
+                    <td class="txt">Geografia</td>
+                    <td>0.8</td>
+                    <td>5.9</td>
+                    <td>2.2</td>
+                </tr>
+                <tr>
+                    <td colspan="4" class="txt" id="fundo2">Média de Humanas</td>
+                    <td id="fundo2">8.1</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <footer>
+        <p>@ Criado por guybersonpereira</p>
+    </footer>
+</body>
+</html>
