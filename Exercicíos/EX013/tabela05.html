@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+    <title>Tabelas</title>
+    <style>
+        body{
+            background-color: rgb(48,48,48);
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            border-collapse: collapse;
+            width: 400px;
+            margin: auto;
+            box-shadow: 10px 10px 20px black;
+        }
+        .cnome{
+            background-color:yellow;
+            color: black;
+        }
+        .ctotal{
+            background-color: white;
+        }
+        th{
+            background-color: blueviolet;
+            color: black;
+            font-weight: bolder;
+        }
+        tr, th, td{
+            border: 2px solid rgb(0, 255, 34);
+            padding: 20px;
+            color: black;
+        }
+        div{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Exercicio de Tabela.</h1>
+        <table>
+            <colgroup>
+                <col class="cnome">
+                <col class="ctotal" span="3">
+            </colgroup>
+            <caption>Cadastro</caption>
+            <tr>
+                <th scope="col">Nome</th>
+                <th scope="col">Sexo</th>
+                <th scope="col">Idade</th>
+                <th scope="col">Profição</th>
+            </tr>
+            <tr>
+                <td>Jhonny</td>
+                <td>M</td>
+                <td>19</td>
+                <td>Analista</td>
+            </tr>
+            <tr>
+                <td>Maria</td>
+                <td>F</td>
+                <td>21</td>
+                <td>Estudante</td>
+            </tr>
+            <tr>
+                <td>Mario</td>
+                <td>M</td>
+                <td>45</td>
+                <td>Pedreiro</td>
+            </tr>
+            <tr>
+                <td>Ana</td>
+                <td>F</td>
+                <td>13</td>
+                <td>Criança</td>
+            </tr>
+        </table>
+    </div>
+
+</body>
+</html>
