@@ -1,0 +1,31 @@
+@charset "UTF-8";
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    height: 100vw;
+
+
+    background-image: url('../imagens/wallpaper\ fundo.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+}
+main{
+    position: relative;
+    height: 100vh;
+}
+
+#tel{
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    translate: -50% -50%;
+
+    height: 630px;
+    width: 310px;
+    background-image: url('../imagens/frame-iphone.png');
+}
