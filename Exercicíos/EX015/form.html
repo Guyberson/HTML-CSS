@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="logo02.png" type="image/x-icon">
+    <title>Fomularios</title>
+    <style>
+        body{
+            background-color: rgb(48, 48, 48);
+            color: white;
+        }
+        section{
+            display: inline;
+        }
+        h1{
+            text-align: center;
+            font-size: 3em;
+        }
+        form{
+            background-image: linear-gradient(to left, rgb(200,200,200), rgb(171, 213, 218));
+            color: black;
+            width: 400px;
+            height: 400px;
+            margin: auto;
+            border-radius: 20px;
+            padding: 30px;
+            box-shadow: 10px 10px 20px black;
+            font-weight: bolder;
+        }
+        p{
+            margin-left: 30%;
+
+        }
+        #botao{
+            font-size: 1em;
+            margin-left: 42%;
+            margin-top: 100px;
+        }
+        input{
+            margin-bottom: 50px;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <section>
+    <h1>Estudos de Formulario.</h1>
+        <form action="cadastro.php" autocomplete="off" method="post">
+            <p>
+                <label for="nome">Nome</label><br>
+                <input type="text" name="nome" id="nome">
+            </p>
+            <p>
+                <label for="snome">Sobrenome</label><br>
+                <input type="text" name="snome" id="snome">
+            </p>
+            <input type="submit" value="Enviar" id="botao">
+        </form>
+    </section>
+</body>
+</html>
