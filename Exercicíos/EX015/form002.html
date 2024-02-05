@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="logo02.png" type="image/x-icon">
+    <title>Logim</title>
+    <style>
+        ::-webkit-scrollbar{
+            width: 0px;
+            height: 0px;
+        }
+        body{
+            background-image: linear-gradient(to bottom, blue, rgb(0, 0, 126));
+            height: 100vh;
+            background-image: url('wallpaper\ fundo.jpg');
+            background-position: center top;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+        h1{
+            color: white;
+            font-size: 3em;
+            text-shadow: 3px 3px 10px black;
+        }
+        section{
+            text-align: center;
+        }
+        form{
+            backdrop-filter: blur(10px);
+            border: 2px solid rgb(0, 170, 255);
+            color: black;
+            margin: auto;
+            width: 500px;
+            height: 450px;
+            padding: 10px;
+            border-radius: 20px;
+        }
+        form p{
+            text-align: start;
+            margin-left: 20%;
+        }
+        form .especial{
+            background-color: white;
+            color: black;
+            font-size: 15px;
+            height: 30px;
+            width: 100px;
+            margin: 50px 0px 50px 30px;
+            box-shadow: 0px 0px 0px black;
+            text-shadow: 0px 0px 0px black;
+        }
+        form label{
+            font-weight: bolder;
+        }
+        form input{
+            box-shadow: 2px 2px 5px black;
+            border: 1px solid black;
+        }
+        form label,input{
+            background-color: transparent;
+            color: white;
+            text-shadow: 2px 2px 5px black;
+            font-size: 20px;
+            margin-bottom: 50px;
+            height: 30px;
+            width: 300px;
+            border-radius: 8px;
+        }
+        ::placeholder{
+            color: black;
+            text-indent: 20px;
+            font-size: 13px;
+            text-shadow: 0.2px 0.2px 1px rgb(83, 83, 83);
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <h1>Estudos de Formularios.</h1>
+        <form action="cadastro.php" method="post" autocomplete="off">
+            <p>
+                <label for="nome">Usuário</label><br>
+                <input type="text" name="usu" id="nome" required minlength="5" maxlength="50" placeholder="Digite Seu Nome">
+            </p>
+            <p>
+                <label for="senha">Senha</label><br>
+                <input type="password" name="sen" id="senha" required minlength="4" maxlength="10" placeholder="Digite Sua Senha">
+            </p>
+            <p>
+                <input type="submit" value="Entrar" class="especial">
+                <input type="reset" value="Limpar" class="especial">
+            </p>
+        </form>
+    </section>
+</body>
+</html>
