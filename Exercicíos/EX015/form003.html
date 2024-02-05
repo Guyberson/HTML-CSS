@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="logo02.png" type="image/x-icon">
+    <title>Formulario</title>
+    <style>
+        ::-webkit-scrollbar{
+            width: 0px;
+            height: 0px;
+        }
+        body{
+            background-image: linear-gradient(to bottom, blue, rgb(0, 0, 123));
+            background-image: url('wallpaper\ 05.jpg');
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            color: white;
+        }
+        section{
+            text-align: center;
+            height: 100vh;
+        }
+        form{
+            backdrop-filter: blur(10px);
+            border: 2px solid black;
+            color: black;
+            box-shadow: 5px 5px 20px black;
+            border-radius: 20px;
+            margin: auto;
+            padding: 10px;
+            width: 500px;
+            height: 300px;
+        }
+        form label{
+            font-size: 20px;
+            color: white;
+            text-shadow: 1px 1px 3px black;
+        }
+        form p{
+            font-size: 18px;
+            font-weight: bolder;
+            margin-left: 33%;
+            text-align: start;
+        }
+        .especial{
+            margin-left: 38%;
+            margin-top: 80px;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <h1>Exercicios de Formulario.</h1>
+        <form action="cadastro.php" method="post" autocomplete="off">
+            <p>
+                <label for="inome">Nome</label><br>
+                <input type="text" name="Nome" id="inome" required minlength="5" maxlength="50" placeholder="Digite Seu Nome">
+            </p>
+            <p>
+                <label for="imedia">Média</label><br>
+                <input type="number" name="Media" id="imedia" required placeholder="Digite Sua Média">
+            </p>
+            <p>
+                <label for="mes">Ano Letivo</label><br>
+                <input type="month" name="anoletivo" id="mes" required >
+            </p>
+            <p class="especial">
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </p>
+        </form>
+    </section>
+</body>
+</html>
