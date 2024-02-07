@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="logo02.png" type="image/x-icon">
+    <title>Execicios de Formulario.</title>
+</head>
+<body>
+    <h1>Novos Comandos de Formulario.</h1>
+    <form action="cadastro.js" method="post" autocomplete="off">
+        <fieldset>
+            <legend>Dados Pessoais.</legend>
+            <p>
+                <label for="nome">Nome</label>
+                <input type="text" name="nome" id="nome" required placeholder="Digite seu Nome" maxlength="20">
+            </p>
+            <p>
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" required placeholder="Digite seu Email" maxlength="50">
+            </p>
+            <p>
+                <label for="tel">Telefone</label>
+                <input type="tel" name="tel" id="tel" required placeholder="Numero de Telefone">
+            </p>
+        </fieldset>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
