@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="logo02.png" type="image/x-icon">
+    <title>Chekim Em Formularios.</title>
+    <style>
+        body{
+            background-image: url('wallpaper\ fundo\ 02.jpg');
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
+            background-attachment: fixed;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h1{
+            color: red;
+            font-size: 2.5em;
+            text-shadow: 5px 5px 10px black;
+        }
+        section{
+            text-align: center;
+        }
+        form{
+            margin: auto;
+            padding: 20px;
+            width: 700px;
+            height: 500px;
+            border-radius: 20px;
+            border: 3px solid white;
+            backdrop-filter: blur(15px);
+            box-shadow: 10px 10px 20px black;
+            text-align: start;
+        }
+        form fieldset{
+            margin: auto;
+        }
+        .sexo{
+            height: 100px;
+            width: 500px;
+            padding: 10px;
+            margin-bottom: 50px;
+        }
+        #sec{
+            width: 100px;
+            border-radius: 5px;
+            margin-top: 20px;
+            padding: 2px;
+        }
+        .bespl:hover{
+            transition-duration: 0.3s;
+            background-color: rgb(255, 33, 33);
+            color: white;
+            width: 100px;
+            height: 25px;
+            border-radius: 5px;
+            font-size: 16px;
+            box-shadow: 5px 5px 10px black;
+        }
+        .bespc:hover{
+            transition-duration: 0.3s;
+            background-color: rgb(33, 255, 40);
+            color: white;
+            width: 100px;
+            height: 25px;
+            border-radius: 5px;
+            font-size: 16px;
+            box-shadow: 5px 5px 10px black;
+        }
+        fieldset{
+            border-radius: 10px;
+            box-shadow: 5px 5px 5px black;
+            height: 200px;
+            width: 500px;
+            padding: 10px;
+        }
+        legend{
+            font-size: 20px;
+        }
+        label, input{
+            font-style: italic;
+            padding-top: 10px;
+        }
+        div{
+            text-align: center;
+        }
+        div input{
+            width: 100px;
+            height: 25px;
+            text-align: center;
+            margin-top: 50px;
+            padding: 2px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <h1>Quais Seus Filmes Favoritos</h1>
+        <form action="script.js">
+            <fieldset class="sexo">
+                <legend>Sexo.</legend>
+                <input type="radio" name="sec" id="masc" placeholder="Masculino">
+                <label for="masc">Masculino.</label> <br>
+
+                <input type="radio" name="sec" id="femi" placeholder="femi">
+                <label for="femi">Feminino.</label> <br>
+
+                <input type="reset" value="Limpar" id="sec" class="bespl">
+
+            </fieldset>
+            <fieldset>
+                <legend>Filmes Favoritos</legend>
+
+                <input type="checkbox" name="filmes" id="fil1">
+                <label for="fil1">Vingadores.</label> <br>
+
+                <input type="checkbox" name="filmes" id="fil2">
+                <label for="fil2">Batman.</label><br>
+
+                <input type="checkbox" name="filmes" id="fil3">
+                <label for="fil3">Viúva Negra.</label> <br>
+
+                <input type="checkbox" name="filmes" id="fil4">
+                <label for="fil4">Capitão America. </label> <br>
+
+                <input type="checkbox" name="filmes" id="fil5">
+                <label for="fil5">Homem Formiga.</label> <br>
+
+            </fieldset>
+            <div>
+                <p>
+                    <input type="submit" value="Enviar" class="bespc">
+                    <input type="reset" value="Limpar" class="bespl">
+                </p>
+            </div>
+        </form>
+    </section>
+</body>
+</html>
