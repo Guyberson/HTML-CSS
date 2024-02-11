@@ -10,13 +10,15 @@
     <h1>Selecione Seu Estado</h1>
     <form action="script.js" method="post">
         <p>
-            <label for="estado">Estados</label>
-            <select name="eestados" id="estado">
-                <option value="MG">Minas Gerais</option>
-                <option value="Rj">Rio De Janeiro</option>
-                <option value="SP">São Paulo</option>
-                <option value="MT">Mato Grosso</option>
-            </select>
+            <label for="Estado">Estado</label>
+            <select name="estado" id="Estado">
+                <option value="" selected>--- Escolha ---</option>
+                <optgroup label="Região Norte">
+                    <option value="AM">Amazonas</option>
+                    <option value="RR">Roraima</option>
+                </optgroup>
+
+            </select> 
         </p>
         <p>
             <input type="submit" value="Enviar">
