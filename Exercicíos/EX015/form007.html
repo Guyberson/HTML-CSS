@@ -5,25 +5,83 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="logo02.png" type="image/x-icon">
     <title>Select</title>
+    <style>
+        body{
+            background-color: rgb(48,48,48);
+            color: white;
+        }
+        section{
+            text-align: center;
+        }
+        form{
+            background-color: rgb(86, 86, 86);
+            width: 350px;
+            height: 300px;
+            border: 2px solid white;
+            border-radius: 10px;
+            margin: auto;
+            padding: 20px;
+        }
+        form p{
+            margin-left: 55px;
+            text-align: start;
+        }
+    </style>
 </head>
 <body>
-    <h1>Selecione Seu Estado</h1>
-    <form action="script.js" method="post">
-        <p>
-            <label for="Estado">Estado</label>
-            <select name="estado" id="Estado">
-                <option value="" selected>--- Escolha ---</option>
-                <optgroup label="Região Norte">
-                    <option value="AM">Amazonas</option>
-                    <option value="RR">Roraima</option>
-                </optgroup>
-
-            </select> 
-        </p>
-        <p>
-            <input type="submit" value="Enviar">
-            <input type="reset" value="Limpar">
-        </p>
-    </form>
+    <section>
+        <h1>Selecione Seu Estado</h1>
+        <form action="script.js" method="post">
+            <p>
+                <label for="Estado">Estado</label>
+                <select name="estado" id="Estado">
+                    <option value="" selected>--- Escolha ---</option>
+                    <optgroup label="Região Norte">
+                        <option value="AM">Amazonas</option>
+                        <option value="RR">Roraima</option>
+                        <option value="AP">Amapá</option>
+                        <option value="PA">Pará</option>
+                        <option value="TO">Tocantins</option>
+                        <option value="RO">Rondônia</option>
+                        <option value="AC">Acre</option>
+                    </optgroup>
+                    <optgroup label="Região Nordeste ">
+                        <option value="AL">Alagoas</option>
+                        <option value="BA">Bhaia</option>
+                        <option value="CE">Ceára</option>
+                        <option value="MA">Maranhão</option>
+                        <option value="PB">Paraiba</option>
+                        <option value="PE">Pernabuco</option>
+                        <option value="PI">Píaui</option>
+                        <option value="RN">Rio Grande Do Norte</option>
+                        <option value="SE">Sergipe</option>
+                    </optgroup>
+                    <optgroup label="Região Centro Oeste">
+                        <option value="MT">Mato Grosso</option>
+                        <option value="MS">MAto Grosso Do Sul</option>
+                        <option value="GO">Goiás</option>
+                    </optgroup>
+                    <optgroup label="Região Sudeste">
+                        <option value="SP">Sãõ Paulo</option>
+                        <option value="RJ">Rio De Janeiro</option>
+                        <option value="ES">Espirito Santo</option>
+                        <option value="MG">Minas Gerais</option>
+                    </optgroup>
+                    <optgroup label="Região Sul">
+                        <option value="PR">Párana</option>
+                        <option value="RS">Rio Grande Do Sul</option>
+                        <option value="SC">Santa Catarina</option>
+                    </optgroup>
+                </select>
+            </p>
+            <label for="texto">Esqueva oque quiser aqui.</label> <br>
+            <textarea name="txtl" id="texto" cols="30" rows="10">
+            </textarea>
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </p>
+        </form>
+    </section>
 </body>
 </html>
