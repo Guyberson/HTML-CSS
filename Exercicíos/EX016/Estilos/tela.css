@@ -14,3 +14,42 @@ body{
     background-color: rgb(48,48,48);
     color: white;
 }
+header{
+    background-color: rgb(0, 0, 57);
+    padding: 20px;
+}
+header h1{
+    font-size: 3em;
+    text-align: center;
+    margin-bottom: 50px;
+}
+header menu{
+    columns: 6;
+    margin: 20px;
+}
+menu ul{
+    list-style-type: none;
+}
+article {
+    width: 800px;
+    display: block;
+    margin: auto;
+    padding: 20px;
+}
+article h2{
+    margin-bottom: 50px;
+}
+article p{
+    text-align: justify;
+    text-indent: 30px;
+    line-height: 20px;
+    margin-top: 20px;
+    font-style: italic;
+}
+footer{
+    background-color: rgb(0, 0, 57);
+    height: 100px;
+    margin-top: 100px;
+    padding-top: 100px;
+    text-align: center;
+}
