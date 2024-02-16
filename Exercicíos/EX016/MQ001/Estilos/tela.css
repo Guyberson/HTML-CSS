@@ -1,7 +1,10 @@
 @charset "UTF-8";
 
 /*Estilos para tela */
-
+::-webkit-scrollbar{
+    width: 0px;
+    height: 0px;
+}
 *{
     margin: 0px;
     padding: 0px;
@@ -11,7 +14,11 @@ html{
     font-size: 1em;
 }
 body{
-    background-color: rgb(48,48,48);
+    background-image: url('../imagens/back-pc.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     color: white;
 }
 header{
@@ -31,6 +38,8 @@ menu ul{
     list-style-type: none;
 }
 article {
+    backdrop-filter: blur(100px);
+    border-radius: 0px 0px 10px 10px;
     width: 800px;
     display: block;
     margin: auto;
