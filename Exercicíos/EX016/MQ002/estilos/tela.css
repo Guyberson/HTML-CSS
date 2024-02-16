@@ -9,7 +9,7 @@ html{
     height: 100vh;
 }
 body{
-    background-color: rgb(48,48,48);
+    background-image: linear-gradient(to top, rgb(54, 3, 78), rgb(174, 0, 255));
     color: white;
 }
 h1{
