@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagens/logo02.png" type="image/x-icon">
+    <title>Document</title>
+    <style>
+        /*declaração geral*/
+        body{
+            background-color: rgb(48,48,48);
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h1{
+            margin-top: 100px;
+            text-align: center;
+            font-size: 3em;
+            text-shadow: 3px 3px 5px black;
+        }
+
+        /*declaração retrato*/
+        @media screen and (orientation: portrait){
+            body{
+                background-color: blue;
+                color: white;
+            }
+            h1{
+                margin-top: 100px;
+                text-align: center;
+                font-size: 3em;
+                text-shadow: 3px 3px 5px black;
+            }
+        }
+        
+        /*declaração paisagem*/
+        @media screen and (arientation: landscape){
+            body{
+                background-color: blueviolet;
+                color: white;
+            }
+            h1{
+                margin-top: 100px;
+                text-align: center;
+                text-shadow: 3px 3px 5px black;
+                font-size: 3em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Mude a Orientção do Dispositivo.</h1>
+    </header>
+</body>
+</html>
