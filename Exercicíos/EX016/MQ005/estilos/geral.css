@@ -1,0 +1,9 @@
+@charset "UTF-8";
+
+body{
+    background-color: rgb(48,48,48);
+    color: white;
+}
+ul{
+    columns: 6;
+}
