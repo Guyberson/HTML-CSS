@@ -1,1 +1,67 @@
 @charset "UTF-8";
+/*Todas as medidas de telas.*/
+
+/*
+Pequenas telas : até 600px;
+Celular : de 600px ate 780px;
+tablet : de 768px até 992px;
+Desktop : de 992px até 1200px;
+Telas maiores : acima de 1200px;
+
+*/
+@media print{
+    main{
+        min-height: 60vh;
+        width: 95vw;
+        border: 2px solid black;
+        box-shadow: inset 3px 3px 20px black;
+    }
+    main::after{
+        text-decoration: overline;
+        content: 'Impresso atraves do site www.guybersonPereira.com.br';
+        color: black;
+    }
+    main h1{
+        font-family: 'Courier New', Courier, monospace;
+        color: black;
+        font-style: italic;
+        text-shadow: none;
+    }
+
+    #celular{display: none;}
+    #pc{display: none;}
+    #impressora{display: block;}
+    #tablet{display: none;}
+    #tv{display: none;}
+}
+
+@media screen and (min-width: 600px) and (max-width: 800px){
+    body{
+        background-image: url('../imagens/back-tablet.jpg');
+    }
+    #celular{display: none;}
+    #pc{display: none;}
+    #impressora{display: none;}
+    #tablet{display: block;}
+    #tv{display: none;}
+}
+@media acreen and (min-width: 1000px) and (max-width: 1500px){
+    body{
+        background-image: url('../imagens/back-pc.jpg');
+    }
+    #celular{display: none;}
+    #pc{display: block;}
+    #impressora{display: none;}
+    #tablet{display: none;}
+    #tv{display: none;}
+}
+@media acreen and (min-width: 2000px ){
+    body{
+        background-image: url('../imagens/back-tv.jpg');
+    }
+    #celular{display: none;}
+    #pc{display: none;}
+    #impressora{display: none;}
+    #tablet{display: none;}
+    #tv{display: block;}
+}
