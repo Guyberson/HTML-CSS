@@ -3,44 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="estilo.css">
-    <link rel="shortcut icon" href="logo02.png" type="image/x-icon">
+    <link rel="stylesheet" href="estilos/estilo.css">
+    <link rel="shortcut icon" href="imagens/logo02.png" type="image/x-icon">
     <title>Paralax</title>
 </head>
 <body>
     <header>
-        <h1>Welcome !</h1>
+        <h1>logo !</h1>
         <nav>
             <a href="#">Home</a>
             <a href="#">Servisos</a>
             <a href="#">Contatos</a>
+            <a href="#">Worq</a>
         </nav>
     </header>
+    <hr>
     <main>
-        <section>
-            <form action="script.js" method="post">
-                <h2>Logim</h2>
-                <p>
-                    <label for="nome">Nome</label><br>
-                    <input type="text" name="nome" id="nome" required placeholder="Digite Seu Nome" maxlength="50" autocomplete="off"><br>
-                </p>
-                <p>
-                    <label for="email">E-mail</label><br>
-                    <input type="email" name="gmail" id="email" required placeholder="Digite Seu E-mail" maxlength="50" autocomplete="off"><br>
-                </p>
-                <p>
-                    <label for="senha">Senha</label><br>
-                    <input type="password" name="senha" id="senha" required placeholder="Senha" maxlength="10" autocomplete="off"><br>
-                </p>
-                <p>
-                    <input type="submit"><br>
-                    <br>
-                    <input type="checkbox" name="sim" id="sim"> Lembre de Mim
-                </p>
-            </form>
-        </section>
+        <div class="global">
+            <div class="conteiner">
+                <div class="img">
+                    <img src="imagens/undraw_sign_up_n6im.svg" alt="Logim">
+                </div>
+                <form action="script.js" method="post" autocomplete="off">
 
+                    <div class="formulario">
+                        <p class="Logim">
+                            <label for="nome">Nome</label><br>
+                            <input type="text" name="nome" id="nome" required placeholder="Digite Seu Nome" maxlength="50" autocomplete="off"><br>
+                        </p>
+                        <p class="Logim">
+                            <label for="email">E-mail</label><br>
+                            <input type="email" name="gmail" id="email" required placeholder="Digite Seu E-mail" maxlength="50" autocomplete="off"><br>
+                        </p>
+                        <p class="Logim">
+                            <label for="senha">Senha</label><br>
+                            <input type="password" name="senha" id="senha" required placeholder="Senha" maxlength="10"><br>
+                        </p>
+                        <p class="Logim">
+                            <label for="telefone">Celular</label><br>
+                            <input type="tel" name="Celular" id="telefone" required placeholder="(xx)xxxxx.xxxx"><br>
+                        </p>
+                        <p class="Logim">
+                            <input type="submit" value="Entrar">
+                        </p>
+                    </div>
+                    <div class="genero">
+                        <div class="genero-titulo">
+                            <h6>Genero</h6>
+                        </div>
+                        <div class="genero-input">
+                            <p class="escolha">
+                                <input type="radio" name="genero" id="masc">
+                                <label for="masc">Masculino</label>
+                            </p>
+                            <p class="escolha">
+                                <input type="radio" name="genero" id="fem">
+                                <label for="fem">Feminino</label>
+                            </p>
+                            <p class="escolha">
+                                <input type="radio" name="geneno" id="outros">
+                                <label for="outros">Outros</label>
+                            </p>
+                            <p class="escolha">
+                                <input type="radio" name="genero" id="pnd">
+                                <label for="pnd">Prefiro Não Dizer</label>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="cont">
+                        <input type="submit" value="Continuar">
+                    </div>
+                </form>
+            </div>
+        </div>
     </main>
+
+
     <div class="geral">
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet nisi sequi, aliquid magnam ducimus accusamus eos debitis quas voluptatum, laudantium iusto iure autem molestias neque itaque tenetur nulla nam explicabo?
         Tempora sed dicta, cupiditate earum ipsa dolores nam possimus velit sint sequi aliquid quasi, recusandae sit quam? Sunt, incidunt dolores! Harum corporis ad iste eum neque quis deleniti repellendus cumque.
@@ -54,6 +92,11 @@
         Culpa vel repellendus veritatis velit fuga? Molestiae deleniti blanditiis ea unde dolorem nulla eveniet, ex officiis quam delectus atque eius nemo ducimus distinctio at maxime tenetur doloremque numquam pariatur! Consectetur.
         Odio ab minima saepe possimus, quod et? Minus nihil, asperiores unde eveniet provident at harum iure molestiae sapiente rerum repudiandae odio velit ea a sint assumenda! At inventore veritatis in.</p>
     </div>
+
+    <picture>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/rqJDO3TWnac?si=PetfTbHFqKhsL8wM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </picture>
+
     <footer>
         <p>Criado por @Guyberson.</p>
     </footer>
