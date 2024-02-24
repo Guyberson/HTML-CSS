@@ -18,24 +18,26 @@
     </header>
     <main>
         <section>
-            <h2>Logim</h2>
-            <p>
-                <label for="nome">Nome</label><br>
-                <input type="text" name="nome" id="nome" required placeholder="Digite Seu Nome" maxlength="50"><br>
-            </p>
-            <p>
-                <label for="email">E-mail</label><br>
-                <input type="email" name="gmail" id="email" required placeholder="Digite Seu E-mail" maxlength="50"><br>
-            </p>
-            <p>
-                <label for="senha">Senha</label><br>
-                <input type="password" name="senha" id="senha" required placeholder="Senha" maxlength="10"><br>
-            </p>
-            <p>
-                <input type="submit"><br>
-                <br>
-                <input type="checkbox" name="sim" id="sim"> Lembre de Mim
-            </p>
+            <form action="script.js" method="post">
+                <h2>Logim</h2>
+                <p>
+                    <label for="nome">Nome</label><br>
+                    <input type="text" name="nome" id="nome" required placeholder="Digite Seu Nome" maxlength="50" autocomplete="off"><br>
+                </p>
+                <p>
+                    <label for="email">E-mail</label><br>
+                    <input type="email" name="gmail" id="email" required placeholder="Digite Seu E-mail" maxlength="50" autocomplete="off"><br>
+                </p>
+                <p>
+                    <label for="senha">Senha</label><br>
+                    <input type="password" name="senha" id="senha" required placeholder="Senha" maxlength="10" autocomplete="off"><br>
+                </p>
+                <p>
+                    <input type="submit"><br>
+                    <br>
+                    <input type="checkbox" name="sim" id="sim"> Lembre de Mim
+                </p>
+            </form>
         </section>
 
     </main>

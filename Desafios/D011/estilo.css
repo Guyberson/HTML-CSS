@@ -45,6 +45,8 @@ section{
     margin-bottom: 200px;
 }
 input{
+    background-color: rgb(1, 1, 33);
+    color: white;
     border-radius: 2px;
     border:1px solid black;
     height: 20px;
