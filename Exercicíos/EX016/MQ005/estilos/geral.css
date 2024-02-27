@@ -15,8 +15,8 @@ body{
     color: white;
 }
 header{
-    background-color: white;
-    color: black;
+    background-image: linear-gradient(to bottom,rgb(255, 255, 255), rgb(158, 157, 157), rgb(48,48,48));
+    color: white;
     min-height: 150px;
 }
 h1{
@@ -25,6 +25,9 @@ h1{
     margin-bottom: 20px;
     padding-top: 20px;
     font-size: 3em;
+}
+hr{
+    border: 1px solid white;
 }
 menu{
     display: none;
@@ -48,12 +51,14 @@ menu{
 ul{
     list-style-type: none;  
     margin-left: 50px;
+    columns: 6;
+    display: flex;
 }
 li{
     margin: 20px;
     padding: 0px;
 }
-a{
+.lgeral{
     background-color: rgb(12, 71, 199);
     border: 1px solid rgb(48, 48, 48);
     border-radius: 5px;
@@ -61,7 +66,7 @@ a{
     text-decoration: none;
     color: white;
 }
-a:hover{
+.lgeral:hover{
     background-color: rgb(0, 0, 0);
     border: 2px solid rgb(48, 48, 48);
     border-radius: 5px;
@@ -73,6 +78,7 @@ a:hover{
 main{
     margin: 10px;
     text-align: center;
+    margin-bottom: 100px;
 }
 article{
     margin: auto;
@@ -84,4 +90,59 @@ article{
 p{
     text-align: justify;
     text-indent: 30px;
+}
+footer{
+    background-image: linear-gradient(to bottom, rgb(48,48,48), black);
+    color: white;
+    min-height: 500px;
+    display: flex;
+}
+form{
+    margin: auto; 
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+    height: 300px;
+    width: 400px; 
+    box-shadow: 5px 5px 10px black; 
+}
+#header{
+    text-align: center;
+    padding: 10px;
+}
+#nme{
+    margin-left: 25%;
+    padding: 10px;
+}
+#snha{
+    padding: 10px;
+    margin-left: 25%;
+}
+#env{
+    margin-top: 10%;
+    margin-left: 40%;
+}
+#env #boenv{
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    padding: 5px;
+    font-size: 15px;
+}
+#lnk #esp{
+    align-items: end;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bolder;
+}
+#lnk #esp:hover{
+    transition-duration: 0.5s;
+    align-items: end;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 20px;
+    text-shadow: 1px 1px 3px black;
+    color: rgb(0, 0, 0);
+    font-weight: bolder;
 }
